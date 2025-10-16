@@ -66,11 +66,6 @@ endmodule
 
 
 
- 
-endmodule
-
-
-
 verilog
 //Full subtractor
 
