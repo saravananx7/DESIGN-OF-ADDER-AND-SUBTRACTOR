@@ -45,31 +45,40 @@ Write the detailed procedure here
 **Program:**
 Developed by :saravanan k
 Register number:25013282
+
 verilog
 //Full adder
 
 module EXP3_2 (
+
     input  wire a, b, cin,   // Inputs
     output wire sum, carry   // Outputs
+    
 );
 
     // Logic equations
     assign sum   = a ^ b ^ cin;                  // XOR for sum
     assign carry = (a & b) | (b & cin) | (a & cin); // Majority function for carry
+    
 
 endmodule
 
 
+
 verilog
 //Full subtractor
+
 module EXP3_4 (
+
     input  wire a, b, bin,       // Inputs
     output wire diff, borrow     // Outputs
+    
 );
 
     // Logic equations
     assign diff   = a ^ b ^ bin;                  // Difference
     assign borrow = (~a & b) | (~(a ^ b) & bin);  // Borrow logic
+    
 
 endmodule
 
